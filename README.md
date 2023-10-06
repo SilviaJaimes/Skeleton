@@ -28,58 +28,67 @@ json
     "Usuario": "<nombre_de_usuario>",
     "Password": "<contraseña>",
     "Email": "<correo_electronico>"
-**}`
+}`
 
 Este endpoint permite a los usuarios registrarse en el sistema.
 
 ## 1. Generación de Código QR:
 
-**Endpoint: `/QR`**
+**Endpoint**: `/QR`
 
-**Método: `POST`**
+**Método**: `POST`
 
-**Payload:**
+**Payload**:
 
-**`{
+`{
     "Usuario": "<nombre_de_usuario>",
     "Password": "<contraseña>"
-}`**
+}`
 
 Al proporcionar el nombre de usuario y contraseña correctos, el sistema enviará un código QR al correo electrónico registrado del usuario.
 
 ## 2. Verificación de 2FA:
 
-**Endpoint: `/Verify`**
+**Endpoint**: `/Verify`
 
-**Método: `POST`**
+**Método**: `POST`
 
-**Payload:**
+**Payload**:
 
-**`{
+`{
     "Code": "<codigo_de_verificacion>",
     "Usuario": "<nombre_de_usuario>"
-}`**
+}`
 
 Una vez que el usuario escanea el código QR con una aplicación de autenticación (como Google Authenticator), debe ingresar el código generado por la aplicación para verificar su autenticidad.
 
-Otros Endpoints
-**Obtener Todos los Usuarios: GET `/`**
-**Obtener Usuario por ID: GET `/{id}`**
-**Actualizar Usuario: PUT `/{id}`**
-**Eliminar Usuario: DELETE `/{id}`**
+**Otros Endpoints**
+
+Obtener Todos los Usuarios: GET `/`
+
+Obtener Usuario por ID: GET `/{id}`
+
+Actualizar Usuario: PUT `/{id}`
+
+Eliminar Usuario: DELETE `/{id}`
 
 ## Desarrollo ⌨️
 Este proyecto utiliza varias tecnologías y patrones, incluidos:
 
-**Entity Framework Core para la ORM.**
-**Patrón Repository y Unit of Work para la gestión de datos.**
-**TwoFactorAuthNet para la generación de códigos QR y verificación.**
-**AutoMapper para el mapeo entre entidades y DTOs.**
-**SMTP para el envío de correos electrónicos.**
+Entity Framework Core para la ORM.
+
+Patrón Repository y Unit of Work para la gestión de datos.
+
+TwoFactorAuthNet para la generación de códigos QR y verificación.
+
+AutoMapper para el mapeo entre entidades y DTOs.
+
+SMTP para el envío de correos electrónicos.
 
 ## Agradecimientos 🎁
 
-**A todas las librerías y herramientas utilizadas en este proyecto.**
-**A ti, por considerar el uso de este sistema.**
+A todas las librerías y herramientas utilizadas en este proyecto.
 
-**⌨️ con ❤️ por Silvia y Owen 😊**
+A ti, por considerar el uso de este sistema.
+
+⌨️ con ❤️ por Silvia y Owen 😊

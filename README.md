@@ -32,7 +32,7 @@ json
 
 Este endpoint permite a los usuarios registrarse en el sistema.
 
-1. Generación de Código QR:
+## 1. Generación de Código QR:
 
 Endpoint: `/QR`
 
@@ -47,7 +47,7 @@ Payload:
 
 Al proporcionar el nombre de usuario y contraseña correctos, el sistema enviará un código QR al correo electrónico registrado del usuario.
 
-2. Verificación de 2FA:
+## 2. Verificación de 2FA:
 
 Endpoint: `/Verify`
 
@@ -68,7 +68,7 @@ Obtener Usuario por ID: GET `/{id}`
 Actualizar Usuario: PUT `/{id}`
 Eliminar Usuario: DELETE `/{id}`
 
-Desarrollo ⌨️
+## Desarrollo ⌨️
 Este proyecto utiliza varias tecnologías y patrones, incluidos:
 
 Entity Framework Core para la ORM.
@@ -77,7 +77,7 @@ TwoFactorAuthNet para la generación de códigos QR y verificación.
 AutoMapper para el mapeo entre entidades y DTOs.
 SMTP para el envío de correos electrónicos.
 
-Agradecimientos 🎁
+## Agradecimientos 🎁
 
 A todas las librerías y herramientas utilizadas en este proyecto.
 A ti, por considerar el uso de este sistema.

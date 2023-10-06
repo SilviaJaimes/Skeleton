@@ -1,6 +1,6 @@
-# Sistema de Autenticación con Doble Factor usando QR
+# Sistema de Autenticación con Doble Factor usando QR en correo electrónico
 
-Este proyecto proporciona una API que permite a los usuarios registrarse, autenticarse y utilizar la autenticación de dos factores con códigos QR.
+Este proyecto proporciona una API que permite a los usuarios registrarse, autenticarse y utilizar la autenticación de dos factores con códigos QR en correo electrónico.
 
 ## Características 🌟
 

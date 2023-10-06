@@ -24,26 +24,26 @@ Una vez que el proyecto esté en marcha, puedes acceder a los diferentes endpoin
 **Payload**:
 
 json
-`{
-    "Usuario": "<nombre_de_usuario>",
-    "Password": "<contraseña>",
-    "Email": "<correo_electronico>"
-}`
+**`{**
+    **"Usuario": "<nombre_de_usuario>",**
+    **"Password": "<contraseña>",**
+    **"Email": "<correo_electronico>"**
+**}`**
 
 Este endpoint permite a los usuarios registrarse en el sistema.
 
 ## 1. Generación de Código QR:
 
-Endpoint: `/QR`
+**Endpoint: `/QR`**
 
-Método: `POST`
+**Método: `POST`**
 
-Payload:
+**Payload:**
 
-`{
-    "Usuario": "<nombre_de_usuario>",
-    "Password": "<contraseña>"
-}`
+**`{**
+    **"Usuario": "<nombre_de_usuario>",**
+    **"Password": "<contraseña>"**
+**}`**
 
 Al proporcionar el nombre de usuario y contraseña correctos, el sistema enviará un código QR al correo electrónico registrado del usuario.
 
@@ -53,9 +53,9 @@ Endpoint: `/Verify`
 
 Método: `POST`
 
-Payload:
+**Payload:**
 
-`{
+**`{**
     "Code": "<codigo_de_verificacion>",
     "Usuario": "<nombre_de_usuario>"
 }`
